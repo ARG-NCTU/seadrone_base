@@ -14,7 +14,7 @@
     <group ns="$(arg veh)">
         <group if="$(arg rviz)">
             <!--Joystick_node-->
-            <node name="joystick_node" pkg="joystick_control" type="joystick_node" output="screen"/>
+            <node name="joystick_node" pkg="seadrone_control" type="joystick_node" output="screen"/>
 
             <!--Joystick-->
             <node name="joy_node" pkg="joy" type="joy_node" output="screen"/>
@@ -30,7 +30,7 @@
 
         <group unless="$(arg rviz)">
             <!--Joystick_node-->
-            <node name="joystick_node" pkg="joystick_control" type="joystick_node" output="screen"/>
+            <node name="joystick_node" pkg="seadrone_control" type="joystick_node" output="screen"/>
 
             <!--Joystick-->
             <node name="joy_node" pkg="joy" type="joy_node" output="screen"/>
