@@ -1,8 +1,9 @@
 <h1 align="center"> Seadrone </h1>
 
 This is a robot repo for seadrone, including ros package for
-- joystick_control
+- seadrone_control
 - sensors
+    - rpi_ipcam_base
 
 ---
 ## Joystick Controller
