@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <!--detect-->
+    <node name="camera_node" pkg="rpi_ipcam_base" type="cam.py" required="true" output="screen"/>
+</launch>

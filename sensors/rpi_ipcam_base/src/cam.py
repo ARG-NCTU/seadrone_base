@@ -17,8 +17,6 @@ def image():
 	bridge = CvBridge()
 	rospy.init_node("seadrone_image_node", anonymous=True)
 
-	pub_hand = rospy.Publisher('/mediapipe/image', Image, queue_size = 10)
-
 	pub_img = rospy.Publisher('/seadrone_image/image', Image, queue_size = 10)
 	pub_info = rospy.Publisher('/seadrone_info', CameraInfo, queue_size = 10)
 	
