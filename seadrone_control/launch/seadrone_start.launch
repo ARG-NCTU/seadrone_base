@@ -16,8 +16,8 @@
             <!--Joystick_node-->
             <node name="joystick_node" pkg="seadrone_control" type="joystick_node" output="screen"/>
 
-            <!--Joystick-->
-            <node name="joy_node" pkg="joy" type="joy_node" output="screen"/>
+	    <!--Joystick-->
+	    <!--<node name="joy_node" pkg="joy" type="joy_node" output="screen"/>-->
             
             <group if="$(arg camera)">
                 <!--Camera-->
@@ -33,7 +33,7 @@
             <node name="joystick_node" pkg="seadrone_control" type="joystick_node" output="screen"/>
 
             <!--Joystick-->
-            <node name="joy_node" pkg="joy" type="joy_node" output="screen"/>
+	    <!--<node name="joy_node" pkg="joy" type="joy_node" output="screen"/>-->
 
             <group if="$(arg camera)">
                 <!--Camera-->
