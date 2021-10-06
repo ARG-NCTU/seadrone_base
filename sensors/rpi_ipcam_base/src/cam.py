@@ -40,12 +40,12 @@ def image():
 		cam_info.R = [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
 		cam_info.P = [635.284485, 0.000000, 805.929614, 0.000000, 635.284485, 0.000000, 805.929614, 0.000000, 0.0, 0.0, 1.0, 0.0]
 		cam_info.distortion_model = "plumb_bob"
-		pub_info.publish(cam_info)
-		pub_img.publish(bridge.cv2_to_imgmsg(image, "bgr8"))
 		rate.sleep()
 		
 		cv2.putText(image, "fps:{}".format(fps), (5, 720 - 5), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
 		cv2.imshow('seadrone_camera', image)
+		pub_info.publish(cam_info)
+		pub_img.publish(bridge.cv2_to_imgmsg(image, "bgr8"))
 		cv2.waitKey(3)
 
 	cv2.destroyAllWindows()
